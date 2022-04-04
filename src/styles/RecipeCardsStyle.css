@@ -1,0 +1,50 @@
+#category {
+  display: inline-block;
+  background-color: beige;
+  padding: 5px;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+  color: maroon;
+  text-decoration: underline;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+.nav {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+figure {
+  position: relative;
+  text-align: center;
+  margin-right: 0px;
+  margin-left: 32px;
+  float: left;
+  border-radius: 20px;
+  width: 340px;
+  height: 275px;
+  background-color: beige;
+}
+
+img {
+  position: absolute;
+  box-shadow: 6px 3px 20px;
+  top: 10px;
+  left: 15px;
+  border-radius: 20px;
+  width: 310px;
+  height: 200px;
+}
+
+figcaption {
+  position: relative;
+  font-family: Verdana, Geneva, sans-serif;
+  color: maroon;
+  font-size: 14px;
+  font-weight: bold;
+  top: 220px;
+}
