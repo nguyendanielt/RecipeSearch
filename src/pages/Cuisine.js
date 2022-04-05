@@ -30,6 +30,10 @@ function Cuisine() {
     );
   });
 
+  if (cuisine.length === 0) {
+    return <div />;
+  }
+
   return (
     <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} transition={{duration: 0.75}}>
       <div id="category">{inputStr} Recipes</div>

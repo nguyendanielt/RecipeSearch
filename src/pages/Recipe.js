@@ -30,6 +30,10 @@ function Recipe() {
     <b>Instructions:</b><br />${recipeInfo.instructions}<br />
     <img id="recipe-image" src=${recipeInfo.image} alt=${recipeInfo.title} />
   `;
+  
+  if (Object.keys(recipeInfo).length === 0 || ingredients.length === 0) {
+    return <div />;
+  }
 
   return (
     <motion.div key={recipeInfo.id} initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} transition={{duration: 0.75}}>
