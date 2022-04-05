@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
+import {motion} from 'framer-motion';
 import '../styles/RecipeDetailsStyle.css';
 
 function Recipe() {
@@ -31,9 +32,9 @@ function Recipe() {
   `;
 
   return (
-    <div key={recipeInfo.id}>
+    <motion.div key={recipeInfo.id} initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} transition={{duration: 0.75}}>
       <div id="recipe-container" dangerouslySetInnerHTML={{__html: recipeDesc}} />
-    </div>
+    </motion.div>
   );
 }
 

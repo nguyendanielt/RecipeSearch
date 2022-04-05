@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
 import {useParams, NavLink} from 'react-router-dom';
+import {motion} from 'framer-motion';
 import '../styles/RecipeCardsStyle.css';
 
 function SearchResult() {
@@ -30,14 +31,14 @@ function SearchResult() {
   });
 
   return (
-    <div>
+    <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} transition={{duration: 0.75}}>
       <div id="category">Search Results for "{inputStr}"</div>
       <div>
         {searchedRecipes?.map((recipe) => {
           return recipe;
         })}
       </div>
-    </div>
+    </motion.div>
   );
 }
 

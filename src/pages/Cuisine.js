@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
 import {useParams, NavLink} from 'react-router-dom';
+import {motion} from 'framer-motion';
 import '../styles/RecipeCardsStyle.css';
 
 function Cuisine() {
@@ -30,14 +31,14 @@ function Cuisine() {
   });
 
   return (
-    <div>
+    <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} transition={{duration: 0.75}}>
       <div id="category">{inputStr} Recipes</div>
       <div>
         {recipes?.map((recipe) => {
           return recipe;
         })}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
