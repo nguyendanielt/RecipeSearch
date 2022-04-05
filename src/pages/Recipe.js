@@ -24,16 +24,16 @@ function Recipe() {
   });
 
   const recipeDesc = `
+    <div id="title">${recipeInfo.title}</div><br />
     <div><b>Ingredients:</b><ul>${ingredientsList}<ul><br /></div>
     <b>Instructions:</b><br />${recipeInfo.instructions}<br />
+    <img id="recipe-image" src=${recipeInfo.image} alt=${recipeInfo.title} />
   `;
 
   return (
     <div key={recipeInfo.id}>
-      <div id="title">{recipeInfo.title}</div>
-      <img id="recipe-image" src={recipeInfo.image} alt={recipeInfo.title} />
       <div id="recipe-container" dangerouslySetInnerHTML={{__html: recipeDesc}} />
-   </div>
+    </div>
   );
 }
 
