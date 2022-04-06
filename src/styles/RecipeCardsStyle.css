@@ -21,12 +21,12 @@
 figure {
   position: relative;
   text-align: center;
-  margin-right: 0px;
+  margin-right: 37px;
   margin-left: 32px;
   float: left;
   border-radius: 20px;
-  width: 340px;
-  height: 275px;
+  width: 310px;
+  height: 245px;
   background-color: beige;
 }
 
@@ -36,8 +36,8 @@ img {
   top: 10px;
   left: 15px;
   border-radius: 20px;
-  width: 310px;
-  height: 200px;
+  width: 280px;
+  height: 170px;
 }
 
 figcaption {
@@ -46,5 +46,5 @@ figcaption {
   color: maroon;
   font-size: 14px;
   font-weight: bold;
-  top: 220px;
+  top: 190px;
 }
